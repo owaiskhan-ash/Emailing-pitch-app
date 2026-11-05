@@ -97,7 +97,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'yoko-sizzlers', name: 'Yoko Sizzlers', emails: ['info@yokosizzlers.com'], phone: '+91 91678 68642',
     cuisine: 'Fine Dining Sizzlers & Continental', locality: 'Oshiwara', address: 'Link Plaza, New Link Rd, Oshiwara 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'With sizzler plates, continental favourites, and busy table service at Link Plaza, your team needs billing and kitchen tickets to keep pace with every order.',
       posType: 'Restaurant', workflow: 'counter and table workflow', reliability: 'your billing and KOTs keep moving smoothly through weekend dinner rush',
@@ -108,10 +108,10 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'facing-east', name: 'Facing East', emails: ['facingeastjuhu@gmail.com'], phone: '+91 77000 52322',
     cuisine: 'Pan-Asian, Sushi & Chinese Fine Dining', locality: 'Oshiwara', address: 'Near Meera Tower, Oshiwara 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'Coordinating sushi, Pan-Asian small plates, and Chinese mains across a fine-dining room near Meera Tower calls for clean order handoffs and unhurried guest service.',
-      posType: 'Fine Dining Restaurant', workflow: 'menu and table workflow', reliability: 'sushi, wok, and table orders stay coordinated through your busiest dinner service',
+      posType: 'Fine Dining Restaurant', workflow: 'table workflow', reliability: 'sushi, wok, and table orders stay coordinated through your busiest dinner service',
       featureTitle: 'Table Service & Kitchen KOTs', features: 'Sushi and Chinese menu mapping, course-wise KOTs, split bills, discounts, and Cash / UPI / Card tracking',
       uptime: 'Rock-solid uptime for dinner rush, weekend reservations, and continuous table service', caseStudy: 'Food Inn POS', demoLocation: 'Oshiwara',
     },
@@ -119,7 +119,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'al-ayamna', name: 'Al Ayamna Restaurant & Banquet', emails: ['asad@alayamna.com'], phone: '+91 98199 91117',
     cuisine: 'Middle Eastern, Mughlai & Banquet Dining', locality: 'Jogeshwari West', address: '255 S.V. Road, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'Managing Middle Eastern and Mughlai dining alongside banquet events on S.V. Road means your team handles very different orders, packages, and billing flows every day.',
       posType: 'Restaurant & Banquet', workflow: 'restaurant and banquet workflow', reliability: 'restaurant KOTs and banquet billing keep working through peak events and dinner rush',
@@ -130,7 +130,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'mina-international', name: 'Hotel Mina International / Mina Mughal Darbar', emails: ['info@hotelmina.com'], phone: '+91 93216 77721',
     cuisine: 'Hotel, Multi-Cuisine Restaurant & Rooftop Lounge', locality: 'Momin Nagar', address: '255 S.V. Road, Momin Nagar, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'Serving multi-cuisine restaurant guests and rooftop lounge diners at Hotel Mina International requires orders to reach the right kitchen or bar without slowing down your team.',
       posType: 'Restaurant & Lounge', workflow: 'restaurant and rooftop service workflow', reliability: 'restaurant and rooftop orders keep moving through dinner and late-evening rush',
@@ -141,7 +141,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'jaffer-bhai-delhi-darbar', name: "Jaffer Bhai's Delhi Darbar & Banquet", emails: ['info@jbdd.co.in', 'jafferbhaisdelhidarbar@gmail.com'], phone: '022-26770011',
     cuisine: 'Upscale Mughlai, Biryani & Banquet Dining', locality: 'Jogeshwari West', address: 'EE Heights, S.V. Road, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'Between signature biryani and Mughlai dining, takeaway parcels, and banquet events at EE Heights, your order flow needs to stay clear even when every channel gets busy.',
       posType: 'Restaurant & Banquet', workflow: 'dining, takeaway, and banquet workflow', reliability: 'biryani parcels, restaurant KOTs, and event billing keep moving during peak rush',
@@ -152,7 +152,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'aromas-cafe-bistro', name: 'Aromas Cafe & Bistro', emails: ['info@ihpl.asia', 'franchise@ihpl.asia'], phone: '+91 98331 23702',
     cuisine: 'All-Day Cafe, Italian, Mexican & Lebanese', locality: 'Oshiwara', address: 'Link Plaza, Oshiwara 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'An all-day menu spanning Italian, Mexican, and Lebanese dishes at Link Plaza brings a steady mix of cafe tables, quick bites, and full meals from morning to evening.',
       posType: 'Cafe & Bistro', workflow: 'all-day menu and table workflow', reliability: 'cafe billing and kitchen KOTs stay quick from breakfast through late dinner',
@@ -163,7 +163,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'dinshaws-xpress', name: "Dinshaw's Xpress Cafe", emails: ['9.akshay@gmail.com'], phone: '+91 90045 30507',
     cuisine: 'Cafe, Burgers, Pizzas, Waffles & Parsi Dining', locality: 'Oshiwara', address: 'Windermere, Off Oshiwara Link Rd',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'With burgers, pizzas, waffles, and Parsi favourites moving across one all-day cafe menu at Windermere, fast item search and accurate kitchen notes make every order easier.',
       posType: 'Cafe & Casual Dining', workflow: 'counter, takeaway, and table workflow', reliability: 'counter billing and cafe KOTs keep moving during your busiest snack and dessert hours',
@@ -174,7 +174,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: '1441-pizzeria', name: '1441 Pizzeria', emails: ['info@1441pizzeria.com', 'events@1441pizzeria.com'], phone: '+91 70392 81441',
     cuisine: 'Wood-Fired Italian Pizzeria & Pasta', locality: 'Jogeshwari West', address: 'Shop 21, Oshiwara Link Plaza, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'Custom wood-fired pizzas, pasta choices, and dine-in or takeaway orders at Oshiwara Link Plaza need clear modifiers on every ticket so the kitchen gets each order right.',
       posType: 'Pizzeria & Italian Restaurant', workflow: 'custom pizza and table workflow', reliability: 'custom pizza tickets, pasta orders, and billing keep flowing through dinner rush',
@@ -185,7 +185,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'bombay-sweet-shop', name: 'Bombay Sweet Shop & Cafe', emails: ['chat@bombaysweetshop.com'], phone: '+91 91364 26339',
     cuisine: 'Gourmet Mithai, Desserts, Namkeen & Cafe', locality: 'Oshiwara', address: 'Shop 6, Vicino Mall, New Link Rd, Oshiwara 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'Selling gourmet mithai, dessert boxes, namkeen, and cafe orders from Vicino Mall means your counter needs one smooth flow for retail packs, gifting, and dine-in treats.',
       posType: 'Sweet Shop & Cafe', workflow: 'retail counter and cafe workflow', reliability: 'mithai, gifting, and cafe billing keep moving during festive and weekend rush',
@@ -196,7 +196,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'icekraft', name: 'IceKraft', emails: ['info@icekraft.in'], phone: '+91 91360 75050',
     cuisine: 'Desserts, FreakShakes, Waffles, Pizza & Pasta', locality: 'Oshiwara', address: 'Ekdant Building, Oshiwara 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'FreakShakes, waffles, ice cream, pizza, and pasta create plenty of custom choices at your Oshiwara dessert counter, especially when groups arrive together.',
       posType: 'Dessert Parlour & Cafe', workflow: 'dessert counter and casual dining workflow', reliability: 'custom dessert orders and food KOTs keep moving through evening and weekend rush',
@@ -207,7 +207,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'bakewills', name: "Bakewill's Boulangerie And Cafe", emails: ['sales@bakewills.com'], phone: '+91 91368 99996',
     cuisine: 'Bakery, Patisserie, Cakes, Pizza & Sandwiches', locality: 'Jogeshwari West', address: 'Firdaus Park, 80 S.V. Road, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'From fresh patisserie and breads to custom cakes, pizza, and sandwiches at Firdaus Park, your team handles both quick counter sales and detailed advance orders.',
       posType: 'Bakery & Cafe', workflow: 'bakery counter and custom cake workflow', reliability: 'counter sales, cake orders, and cafe KOTs stay organised through morning and evening rush',
@@ -218,7 +218,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'homemade-cafe', name: 'The Homemade Cafe', emails: ['thehomemadecafe4@gmail.com'], phone: '022-60221999',
     cuisine: 'Cafe & Bistro', locality: 'Oshiwara', address: 'Kaveri Building, Near Oshiwara Police Station, Link Rd 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'Running a neighbourhood cafe and bistro near Oshiwara Police Station means regular guests, quick coffee orders, and full table meals all need equally smooth service.',
       posType: 'Cafe & Bistro', workflow: 'cafe counter and table workflow', reliability: 'coffee, breakfast, and bistro orders keep moving through every busy service',
@@ -229,7 +229,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'ghaswala-dairy-fresh', name: 'Ghaswala Dairy Fresh', emails: ['info@ghaswaladairyfresh.com'], phone: '+91 99204 02187',
     cuisine: 'Mithai, Sweets, Dairy, Fast Food & Desserts', locality: 'Jogeshwari West', address: '226 S.V. Road, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'With mithai, dairy products, fast food, and desserts sharing one busy S.V. Road counter, quick billing and clear item tracking can make every customer handoff faster.',
       posType: 'Sweet Shop & Food Retail', workflow: 'sweet, dairy, and fast-food counter workflow', reliability: 'retail billing and food orders keep moving during festive and evening rush',
@@ -240,7 +240,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'sheetal-sweets', name: 'Sheetal Sweets', emails: ['sheetalsweets@ymail.com'], phone: '022-26749454',
     cuisine: 'Desi Ghee Mithai, Dryfruit Halwa & Farsan', locality: 'Behram Baug', address: 'S.V. Road & Behram Baug New Link Rd, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'Desi ghee mithai, dryfruit halwa, and farsan orders at your Behram Baug counter need quick, accurate billing, especially when festive boxes and everyday purchases arrive together.',
       posType: 'Sweet Shop', workflow: 'mithai and farsan counter workflow', reliability: 'sweet and farsan billing keeps moving through festive peaks and daily rush',
@@ -251,7 +251,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'maharaj-lounge', name: 'Maharaj Lounge & Cafe', emails: ['a.ahadnedariya@gmail.com'], phone: '+91 99300 04441',
     cuisine: 'Rooftop Dining & Lounge Cafe', locality: 'Jogeshwari West', address: 'Agarwal Estate, S.V. Road, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 1',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 1',
     pitch: {
       opening: 'Rooftop dining at Agarwal Estate brings together table service, cafe orders, and late-evening groups, so clear KOT routing and fast final billing are essential.',
       posType: 'Rooftop Lounge & Cafe', workflow: 'rooftop table and cafe workflow', reliability: 'table orders and final bills keep moving through busy evening service',
@@ -262,7 +262,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'vagad-banquet', name: 'Vagad Banquet Hall', emails: ['vagadbanquethalls@gmail.com'],
     cuisine: 'Pure Veg Banquet & Event Dining', locality: 'Adarsh Nagar', address: 'Plot 41, Adarsh Nagar, Jogeshwari-Oshiwara Link Rd 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 2',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 2',
     pitch: {
       opening: 'Planning pure veg menus and event dining at Vagad Banquet Hall involves guest counts, package choices, advances, and final balances that need to stay clear for every function.',
       posType: 'Banquet & Event Dining', workflow: 'event booking and banquet billing workflow', reliability: 'event orders and banquet billing stay on track throughout your busiest functions',
@@ -273,7 +273,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'pakiza-caterers', name: 'Pakiza Caterers', emails: ['pakizacaterers786@gmail.com'],
     cuisine: 'Multi-Cuisine Buffet & Event Catering', locality: 'Jogeshwari West', address: 'Anand Nagar Market, New Link Rd, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 2',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 2',
     pitch: {
       opening: 'Managing multi-cuisine buffets and event catering from Anand Nagar Market means every enquiry can involve a different menu, guest count, venue, and payment schedule.',
       posType: 'Catering & Event Order', workflow: 'catering enquiry and event order workflow', reliability: 'event orders and payment tracking stay organised through peak wedding and celebration dates',
@@ -284,7 +284,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'tk-enterprises', name: 'TK Enterprises Catering', emails: ['trupti.a.rane@gmail.com'],
     cuisine: 'Wedding & Event Catering', locality: 'Somani Gram', address: 'RNA Building, Ram Mandir Rd, Somani Gram, Jogeshwari West 400104',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 2',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 2',
     pitch: {
       opening: 'Wedding and event catering at TK Enterprises requires careful coordination across custom menus, guest counts, event dates, advances, and final payments.',
       posType: 'Catering & Event Order', workflow: 'wedding and event catering workflow', reliability: 'your catering orders and billing records stay accessible through every busy event schedule',
@@ -295,7 +295,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'royal-general-store', name: 'Royal General Store', emails: ['irfansunasara426@gmail.com'], phone: '+91 85919 58883',
     cuisine: 'Imported Dates, Dry Fruits, Namkeen & Food Retail', locality: 'Behram Baug', address: 'Behram Baug Rd, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 2',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 2',
     pitch: {
       opening: 'Selling imported dates, dry fruits, namkeen, and gift packs at Behram Baug calls for quick product search, accurate billing, and clear stock visibility at the counter.',
       posType: 'Food Retail', workflow: 'packaged food and dry-fruit retail workflow', reliability: 'retail billing and stock tracking keep moving through festive gifting and weekend rush',

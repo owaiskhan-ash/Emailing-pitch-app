@@ -1,6 +1,6 @@
 # Do-not-email blocklist
 
-These 18 restaurants and 20 email addresses were confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 November 2026. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
+These 37 restaurants and 42 email addresses were confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 November 2026. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
 
 | Restaurant | Protected email addresses | Status |
 | --- | --- | --- |
@@ -22,5 +22,24 @@ These 18 restaurants and 20 email addresses were confirmed in Gmail `SENT` on `a
 | Hornara Chinese Restaurant | Sukeshshetty151@gmail.com | Sent |
 | Hunger Hub | hungerhub245@gmail.com, mrunalbhosale.mb@gmail.com | Sent |
 | Sai Leela | sonubansal6264182808@gmail.com | Sent |
+| Yoko Sizzlers | info@yokosizzlers.com | Sent |
+| Facing East | facingeastjuhu@gmail.com | Sent |
+| Al Ayamna Restaurant & Banquet | asad@alayamna.com | Sent |
+| Hotel Mina International / Mina Mughal Darbar | info@hotelmina.com | Sent |
+| Jaffer Bhai's Delhi Darbar & Banquet | info@jbdd.co.in, jafferbhaisdelhidarbar@gmail.com | Sent |
+| Aromas Cafe & Bistro | info@ihpl.asia, franchise@ihpl.asia | Sent |
+| Dinshaw's Xpress Cafe | 9.akshay@gmail.com | Sent |
+| 1441 Pizzeria | info@1441pizzeria.com, events@1441pizzeria.com | Sent |
+| Bombay Sweet Shop & Cafe | chat@bombaysweetshop.com | Sent |
+| IceKraft | info@icekraft.in | Sent |
+| Bakewill's Boulangerie And Cafe | sales@bakewills.com | Sent |
+| The Homemade Cafe | thehomemadecafe4@gmail.com | Sent |
+| Ghaswala Dairy Fresh | info@ghaswaladairyfresh.com | Sent |
+| Sheetal Sweets | sheetalsweets@ymail.com | Sent |
+| Maharaj Lounge & Cafe | a.ahadnedariya@gmail.com | Sent |
+| Vagad Banquet Hall | vagadbanquethalls@gmail.com | Sent |
+| Pakiza Caterers | pakizacaterers786@gmail.com | Sent |
+| TK Enterprises Catering | trupti.a.rane@gmail.com | Sent |
+| Royal General Store | irfansunasara426@gmail.com | Sent |
 
 The machine-readable copy is in `emailed-restaurants.csv`. New restaurants marked as sent in the dashboard are added to its exported blocklist automatically.
