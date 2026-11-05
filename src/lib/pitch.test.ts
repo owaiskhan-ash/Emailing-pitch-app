@@ -1,9 +1,10 @@
 import { describe, expect, it } from 'vitest';
 import { queuedLeads, researchedLeads, seedLeads, sentLeads } from '../data/leads';
+import { andheriEastLeads } from '../data/andheriEastLeads';
 import { APPROVED_HTML_SIGNATURE, generatePitch, hasForbiddenDash } from './pitch';
 import { findEmailConflict, getBlockedEmails } from './leads';
 
-const remaining = [...queuedLeads, ...researchedLeads];
+const remaining = [...queuedLeads, ...researchedLeads, ...andheriEastLeads];
 
 describe('outreach data', () => {
   it('contains the original 18 imports and 40 total sent restaurants with 45 protected addresses', () => {
@@ -12,16 +13,24 @@ describe('outreach data', () => {
     expect(getBlockedEmails(seedLeads)).toHaveLength(45);
   });
 
-  it('keeps the original queue and researched queue complete', () => {
+  it('keeps the original queue and adds 107 unsent Andheri East contacts', () => {
     expect(queuedLeads).toHaveLength(19);
     expect(researchedLeads).toHaveLength(9);
-    expect(remaining).toHaveLength(28);
-    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(6);
+    expect(andheriEastLeads).toHaveLength(107);
+    expect(remaining).toHaveLength(135);
+    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(113);
+    expect(andheriEastLeads.every((lead) => lead.origin === 'researched')).toBe(true);
+    expect(andheriEastLeads.every((lead) => lead.queueGroup === 'New research')).toBe(true);
+    expect(andheriEastLeads.every((lead) => lead.status === 'remaining' && !lead.sentAt)).toBe(true);
+    expect(andheriEastLeads.every((lead) => lead.sourceUrl && lead.pitch)).toBe(true);
+    expect(seedLeads).toHaveLength(153);
   });
 
-  it('has no duplicate email addresses across seed leads', () => {
+  it('has no duplicate email addresses or lead IDs across seed leads', () => {
     const emails = seedLeads.flatMap((lead) => lead.emails.map((email) => email.toLowerCase()));
+    const ids = seedLeads.map((lead) => lead.id);
     expect(new Set(emails).size).toBe(emails.length);
+    expect(new Set(ids).size).toBe(ids.length);
   });
 
   it('matches blocklisted addresses case-insensitively', () => {
@@ -31,7 +40,7 @@ describe('outreach data', () => {
 });
 
 describe('pitch generator', () => {
-  it.each(remaining.map((lead) => [lead.name, lead] as const))('creates a complete, safe pitch for %s', (_name, lead) => {
+  it.each(remaining.map((lead) => [lead.id, lead] as const))('creates a complete, safe pitch for %s', (_id, lead) => {
     const pitch = generatePitch(lead);
     expect(pitch.subject).toContain(lead.name);
     expect(pitch.text).toContain('a server that never goes down');

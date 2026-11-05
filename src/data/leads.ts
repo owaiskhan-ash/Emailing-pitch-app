@@ -1,4 +1,5 @@
 import type { RestaurantLead } from '../types';
+import { andheriEastLeads } from './andheriEastLeads';
 
 export const sentLeads: RestaurantLead[] = [
   {
@@ -416,4 +417,4 @@ export const researchedLeads: RestaurantLead[] = [
   },
 ];
 
-export const seedLeads: RestaurantLead[] = [...sentLeads, ...queuedLeads, ...researchedLeads];
+export const seedLeads: RestaurantLead[] = [...sentLeads, ...queuedLeads, ...researchedLeads, ...andheriEastLeads];
