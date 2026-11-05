@@ -225,7 +225,7 @@ export default function App() {
               </button>
               <button type="button" className="stat-card" onClick={() => navigate('remaining')}>
                 <div className="stat-card__icon stat-card__icon--orange"><Clock3 size={17} /></div>
-                <div><span>Remaining</span><strong>{remainingLeads.length}</strong><small>{originalRemainingCount} original + {researchedRemainingCount} researched{manualCount ? ` + ${manualCount} manual` : ''}</small></div>
+                <div><span>Remaining</span><strong>{remainingLeads.length}</strong><small>{originalRemainingCount > 0 ? `${originalRemainingCount} original + ` : ''}{researchedRemainingCount} researched{manualCount ? ` + ${manualCount} manual` : ''}</small></div>
                 <ArrowRight size={16} className="stat-arrow" />
               </button>
               <button type="button" className="stat-card" onClick={() => navigate('remaining')}>

@@ -262,7 +262,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'vagad-banquet', name: 'Vagad Banquet Hall', emails: ['vagadbanquethalls@gmail.com'],
     cuisine: 'Pure Veg Banquet & Event Dining', locality: 'Adarsh Nagar', address: 'Plot 41, Adarsh Nagar, Jogeshwari-Oshiwara Link Rd 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 2',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 2',
     pitch: {
       opening: 'Planning pure veg menus and event dining at Vagad Banquet Hall involves guest counts, package choices, advances, and final balances that need to stay clear for every function.',
       posType: 'Banquet & Event Dining', workflow: 'event booking and banquet billing workflow', reliability: 'event orders and banquet billing stay on track throughout your busiest functions',
@@ -273,7 +273,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'pakiza-caterers', name: 'Pakiza Caterers', emails: ['pakizacaterers786@gmail.com'],
     cuisine: 'Multi-Cuisine Buffet & Event Catering', locality: 'Jogeshwari West', address: 'Anand Nagar Market, New Link Rd, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 2',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 2',
     pitch: {
       opening: 'Managing multi-cuisine buffets and event catering from Anand Nagar Market means every enquiry can involve a different menu, guest count, venue, and payment schedule.',
       posType: 'Catering & Event Order', workflow: 'catering enquiry and event order workflow', reliability: 'event orders and payment tracking stay organised through peak wedding and celebration dates',
@@ -284,7 +284,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'tk-enterprises', name: 'TK Enterprises Catering', emails: ['trupti.a.rane@gmail.com'],
     cuisine: 'Wedding & Event Catering', locality: 'Somani Gram', address: 'RNA Building, Ram Mandir Rd, Somani Gram, Jogeshwari West 400104',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 2',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 2',
     pitch: {
       opening: 'Wedding and event catering at TK Enterprises requires careful coordination across custom menus, guest counts, event dates, advances, and final payments.',
       posType: 'Catering & Event Order', workflow: 'wedding and event catering workflow', reliability: 'your catering orders and billing records stay accessible through every busy event schedule',
@@ -295,7 +295,7 @@ export const queuedLeads: RestaurantLead[] = [
   {
     id: 'royal-general-store', name: 'Royal General Store', emails: ['irfansunasara426@gmail.com'], phone: '+91 85919 58883',
     cuisine: 'Imported Dates, Dry Fruits, Namkeen & Food Retail', locality: 'Behram Baug', address: 'Behram Baug Rd, Jogeshwari West 400102',
-    status: 'remaining', origin: 'original-queue', queueGroup: 'Batch 2',
+    status: 'sent', sentAt: '2026-11-05', origin: 'original-queue', queueGroup: 'Batch 2',
     pitch: {
       opening: 'Selling imported dates, dry fruits, namkeen, and gift packs at Behram Baug calls for quick product search, accurate billing, and clear stock visibility at the counter.',
       posType: 'Food Retail', workflow: 'packaged food and dry-fruit retail workflow', reliability: 'retail billing and stock tracking keep moving through festive gifting and weekend rush',

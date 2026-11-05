@@ -1,6 +1,6 @@
 # Do-not-email blocklist
 
-These 33 restaurants and 38 email addresses were confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 November 2026. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
+These 37 restaurants and 42 email addresses were confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 November 2026. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
 
 | Restaurant | Protected email addresses | Status |
 | --- | --- | --- |
@@ -37,5 +37,9 @@ These 33 restaurants and 38 email addresses were confirmed in Gmail `SENT` on `a
 | Ghaswala Dairy Fresh | info@ghaswaladairyfresh.com | Sent |
 | Sheetal Sweets | sheetalsweets@ymail.com | Sent |
 | Maharaj Lounge & Cafe | a.ahadnedariya@gmail.com | Sent |
+| Vagad Banquet Hall | vagadbanquethalls@gmail.com | Sent |
+| Pakiza Caterers | pakizacaterers786@gmail.com | Sent |
+| TK Enterprises Catering | trupti.a.rane@gmail.com | Sent |
+| Royal General Store | irfansunasara426@gmail.com | Sent |
 
 The machine-readable copy is in `emailed-restaurants.csv`. New restaurants marked as sent in the dashboard are added to its exported blocklist automatically.
