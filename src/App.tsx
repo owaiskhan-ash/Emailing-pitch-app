@@ -62,7 +62,10 @@ export default function App() {
   const remainingLeads = useMemo(() => leads.filter((lead) => lead.status === 'remaining'), [leads]);
   const blockedEmails = useMemo(() => getBlockedEmails(leads), [leads]);
   const progress = leads.length ? Math.round((sentLeads.length / leads.length) * 100) : 0;
-  const batchOneCount = remainingLeads.filter((lead) => lead.queueGroup === 'Batch 1').length;
+  const nextBatchGroup = (['Batch 1', 'Batch 2', 'New research', 'Manual'] as QueueGroup[]).find((group) =>
+    remainingLeads.some((lead) => lead.queueGroup === group),
+  ) ?? 'Batch 1';
+  const nextBatchCount = remainingLeads.filter((lead) => lead.queueGroup === nextBatchGroup).length;
   const originalRemainingCount = remainingLeads.filter((lead) => lead.origin === 'original-queue').length;
   const researchedRemainingCount = remainingLeads.filter((lead) => lead.origin === 'researched').length;
   const manualCount = remainingLeads.filter((lead) => lead.queueGroup === 'Manual').length;
@@ -242,8 +245,8 @@ export default function App() {
                 <small>{progress}% complete</small>
               </div>
               <div className="next-batch">
-                <div><span>Your next batch</span><strong>{batchOneCount} pitches waiting</strong></div>
-                <button type="button" onClick={() => showQueue('Batch 1')}>Review batch <ArrowRight size={14} /></button>
+                <div><span>Your next batch: {nextBatchGroup}</span><strong>{nextBatchCount} pitches waiting</strong></div>
+                <button type="button" onClick={() => showQueue(nextBatchGroup)}>Review batch <ArrowRight size={14} /></button>
               </div>
             </section>
 
@@ -259,7 +262,7 @@ export default function App() {
               <>
                 <section className="content-section">
                   <div className="section-heading">
-                    <div><h2>Next in queue</h2><p>Your original outreach order, ready to review</p></div>
+                    <div><h2>Next in queue</h2><p>Your next tailored drafts, ready to review</p></div>
                     <button type="button" className="text-button" onClick={() => navigate('remaining')}>View all {remainingLeads.length} <ArrowRight size={14} /></button>
                   </div>
                   {renderLeadGrid(remainingLeads.slice(0, 6))}

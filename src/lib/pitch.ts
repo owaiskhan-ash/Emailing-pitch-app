@@ -52,7 +52,10 @@ export function generatePitch(lead: RestaurantLead): GeneratedPitch {
   const pitch = lead.pitch ?? createDefaultPitch(lead);
   const subject = `Custom ${pitch.posType} POS for ${lead.name} @ ₹2,500/month (Zero Downtime)`;
   const greeting = `Hi ${lead.name} Team,`;
-  const offer = `At Imagine, we build fast, custom ${pitch.posType} POS systems tailored to your exact menu and ${pitch.workflow}, running on a server that never goes down so ${pitch.reliability}.`;
+  const tailoring = pitch.workflow.includes('menu')
+    ? `tailored to your exact ${pitch.workflow}`
+    : `tailored to your exact menu and ${pitch.workflow}`;
+  const offer = `At Imagine, we build fast, custom ${pitch.posType} POS systems ${tailoring}, running on a server that never goes down so ${pitch.reliability}.`;
   const points = [
     `${pitch.featureTitle}: ${pitch.features}.`,
     `Server That Never Goes Down: ${pitch.uptime}.`,

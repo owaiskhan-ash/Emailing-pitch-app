@@ -21,7 +21,7 @@ export function loadLeads(): RestaurantLead[] {
     const savedById = new Map(saved.map((lead) => [lead.id, lead]));
     const mergedSeeds = seedLeads.map((seed) => {
       const stored = savedById.get(seed.id);
-      if (seed.origin === 'sent-import') {
+      if (seed.origin === 'sent-import' || seed.status === 'sent') {
         return { ...seed, status: 'sent' as const, sentAt: seed.sentAt };
       }
       if (!stored) return seed;

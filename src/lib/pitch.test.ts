@@ -6,15 +6,17 @@ import { findEmailConflict, getBlockedEmails } from './leads';
 const remaining = [...queuedLeads, ...researchedLeads];
 
 describe('outreach data', () => {
-  it('contains the 18 Gmail-verified restaurants and 20 protected addresses', () => {
+  it('contains the original 18 imports and 33 total sent restaurants with 38 protected addresses', () => {
     expect(sentLeads).toHaveLength(18);
-    expect(getBlockedEmails(seedLeads)).toHaveLength(20);
+    expect(seedLeads.filter((lead) => lead.status === 'sent')).toHaveLength(33);
+    expect(getBlockedEmails(seedLeads)).toHaveLength(38);
   });
 
   it('keeps the original queue and researched queue complete', () => {
     expect(queuedLeads).toHaveLength(19);
     expect(researchedLeads).toHaveLength(9);
     expect(remaining).toHaveLength(28);
+    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(13);
   });
 
   it('has no duplicate email addresses across seed leads', () => {
@@ -43,6 +45,13 @@ describe('pitch generator', () => {
     expect(hasForbiddenDash(pitch.subject)).toBe(false);
     expect(hasForbiddenDash(pitch.text)).toBe(false);
     expect(hasForbiddenDash(pitch.html)).toBe(false);
+  });
+
+  it('avoids repeated menu wording in tailored offers', () => {
+    const facingEast = queuedLeads.find((lead) => lead.id === 'facing-east')!;
+    const aromas = queuedLeads.find((lead) => lead.id === 'aromas-cafe-bistro')!;
+    expect(generatePitch(facingEast).text).toContain('tailored to your exact menu and table workflow');
+    expect(generatePitch(aromas).text).toContain('tailored to your exact all-day menu and table workflow');
   });
 
   it('creates a Gmail compose link without sending', () => {
