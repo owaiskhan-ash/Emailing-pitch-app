@@ -310,7 +310,7 @@ export const researchedLeads: RestaurantLead[] = [
     id: 'cafe-safar', name: 'Cafe Safar', emails: ['cafesafar2005@gmail.com'], phone: '022 6949 0000',
     cuisine: 'North Indian, Mughlai, Chinese & Fast Food', locality: 'Oshiwara',
     address: 'Reliable Business Centre, Oshiwara Link Road, Andheri West 400053',
-    sourceUrl: 'https://cafesafar.in/contactus', status: 'remaining', origin: 'researched', queueGroup: 'New research',
+    sourceUrl: 'https://cafesafar.in/contactus', status: 'sent', sentAt: '2026-11-05', origin: 'researched', queueGroup: 'New research',
     pitch: {
       opening: 'With family dine-in, home delivery, and a wide North Indian, Mughlai, and Chinese menu near Heera Panna Mall, Cafe Safar handles a lively mix of tables and parcels.',
       posType: 'Family Restaurant', workflow: 'dine-in, parcel, and delivery workflow', reliability: 'table orders, parcels, and KOTs keep moving through late-evening rush',
@@ -322,7 +322,7 @@ export const researchedLeads: RestaurantLead[] = [
     id: 'foo-andheri', name: 'Foo Andheri', emails: ['social@pshpl.com'], phone: '+91 93213 46591',
     cuisine: 'Pan-Asian, Sushi & Asian Tapas', locality: 'Veera Desai',
     address: 'G-5, Morya Landmark 1, Veera Desai Industrial Estate, Andheri West 400053',
-    sourceUrl: 'https://www.gullymumbai.com/business/foo-andheri-87', status: 'remaining', origin: 'researched', queueGroup: 'New research',
+    sourceUrl: 'https://www.gullymumbai.com/business/foo-andheri-87', status: 'sent', sentAt: '2026-11-05', origin: 'researched', queueGroup: 'New research',
     pitch: {
       opening: 'With an extensive Asian tapas menu, sushi, small plates, and drinks moving through your Andheri dining room, accurate course and table coordination is central to the Foo experience.',
       posType: 'Pan-Asian Restaurant', workflow: 'small-plates, sushi, and table workflow', reliability: 'sushi, small plates, and bar or kitchen tickets stay coordinated through dinner rush',
@@ -334,7 +334,7 @@ export const researchedLeads: RestaurantLead[] = [
     id: 'youmee-infiniti', name: 'YouMee Infiniti Mall', emails: ['customercare@lbf.co.in'], phone: '081300 18065',
     cuisine: 'Pan-Asian, Sushi, Dim Sum & Ramen', locality: 'Infiniti Mall, Andheri West',
     address: 'Shop 05, 3rd Floor, Infiniti Mall, Andheri West 400053',
-    sourceUrl: 'https://stores.lbf.co.in/store-pages/youmee-infiniti-mall-andheri-west-mumbai', status: 'remaining', origin: 'researched', queueGroup: 'New research',
+    sourceUrl: 'https://stores.lbf.co.in/store-pages/youmee-infiniti-mall-andheri-west-mumbai', status: 'sent', sentAt: '2026-11-05', origin: 'researched', queueGroup: 'New research',
     pitch: {
       opening: 'Serving sushi, dim sum, ramen, and robata inside Infiniti Mall means YouMee handles quick mall-hour tables alongside detailed, freshly prepared Pan-Asian orders.',
       posType: 'Pan-Asian Restaurant', workflow: 'mall dining, takeaway, and table workflow', reliability: 'sushi, dim sum, and ramen KOTs keep flowing through weekend mall rush',
