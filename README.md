@@ -4,8 +4,8 @@ A minimal restaurant outreach dashboard for Imagine's Jogeshwari and nearby camp
 
 ## Features
 
-- 37 contacted restaurants marked **Pitch sent**, covering 42 protected email addresses.
-- The original 19-lead queue is fully contacted, with 9 researched restaurants remaining.
+- 40 contacted restaurants marked **Pitch sent**, covering 45 protected email addresses.
+- The original 19-lead queue is fully contacted, with 6 researched restaurants remaining.
 - Compact cards, search, queue filters, campaign progress, and separate sent and blocklist views.
 - Personalized plain-text and HTML pitch generation using the approved Imagine signature and hosted logo.
 - Gmail compose links for review. The dashboard never sends email automatically.

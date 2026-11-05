@@ -1,6 +1,6 @@
 # Do-not-email blocklist
 
-These 37 restaurants and 42 email addresses were confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 November 2026. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
+These 40 restaurants and 45 email addresses were confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 November 2026. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
 
 | Restaurant | Protected email addresses | Status |
 | --- | --- | --- |
@@ -41,5 +41,8 @@ These 37 restaurants and 42 email addresses were confirmed in Gmail `SENT` on `a
 | Pakiza Caterers | pakizacaterers786@gmail.com | Sent |
 | TK Enterprises Catering | trupti.a.rane@gmail.com | Sent |
 | Royal General Store | irfansunasara426@gmail.com | Sent |
+| Cafe Safar | cafesafar2005@gmail.com | Sent |
+| Foo Andheri | social@pshpl.com | Sent |
+| YouMee Infiniti Mall | customercare@lbf.co.in | Sent |
 
 The machine-readable copy is in `emailed-restaurants.csv`. New restaurants marked as sent in the dashboard are added to its exported blocklist automatically.

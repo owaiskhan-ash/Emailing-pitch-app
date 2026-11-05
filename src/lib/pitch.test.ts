@@ -6,17 +6,17 @@ import { findEmailConflict, getBlockedEmails } from './leads';
 const remaining = [...queuedLeads, ...researchedLeads];
 
 describe('outreach data', () => {
-  it('contains the original 18 imports and 37 total sent restaurants with 42 protected addresses', () => {
+  it('contains the original 18 imports and 40 total sent restaurants with 45 protected addresses', () => {
     expect(sentLeads).toHaveLength(18);
-    expect(seedLeads.filter((lead) => lead.status === 'sent')).toHaveLength(37);
-    expect(getBlockedEmails(seedLeads)).toHaveLength(42);
+    expect(seedLeads.filter((lead) => lead.status === 'sent')).toHaveLength(40);
+    expect(getBlockedEmails(seedLeads)).toHaveLength(45);
   });
 
   it('keeps the original queue and researched queue complete', () => {
     expect(queuedLeads).toHaveLength(19);
     expect(researchedLeads).toHaveLength(9);
     expect(remaining).toHaveLength(28);
-    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(9);
+    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(6);
   });
 
   it('has no duplicate email addresses across seed leads', () => {
