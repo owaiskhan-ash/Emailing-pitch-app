@@ -7,21 +7,24 @@ import { findEmailConflict, getBlockedEmails } from './leads';
 const remaining = [...queuedLeads, ...researchedLeads, ...andheriEastLeads];
 
 describe('outreach data', () => {
-  it('contains the original 18 imports and 40 total sent restaurants with 45 protected addresses', () => {
+  it('preserves the original sent records and protects 16 Andheri East sends', () => {
     expect(sentLeads).toHaveLength(18);
-    expect(seedLeads.filter((lead) => lead.status === 'sent')).toHaveLength(40);
-    expect(getBlockedEmails(seedLeads)).toHaveLength(45);
+    expect(seedLeads.filter((lead) => lead.status === 'sent')).toHaveLength(56);
+    expect(andheriEastLeads.filter((lead) => lead.status === 'sent')).toHaveLength(16);
+    expect(getBlockedEmails(seedLeads)).toHaveLength(61);
   });
 
-  it('keeps the original queue and adds 107 unsent Andheri East contacts', () => {
+  it('keeps the original queue and tracks 107 Andheri East contacts', () => {
     expect(queuedLeads).toHaveLength(19);
     expect(researchedLeads).toHaveLength(9);
     expect(andheriEastLeads).toHaveLength(107);
     expect(remaining).toHaveLength(135);
-    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(113);
+    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(97);
     expect(andheriEastLeads.every((lead) => lead.origin === 'researched')).toBe(true);
     expect(andheriEastLeads.every((lead) => lead.queueGroup === 'New research')).toBe(true);
-    expect(andheriEastLeads.every((lead) => lead.status === 'remaining' && !lead.sentAt)).toBe(true);
+    expect(andheriEastLeads.filter((lead) => lead.status === 'remaining')).toHaveLength(91);
+    expect(andheriEastLeads.filter((lead) => lead.status === 'sent')).toHaveLength(16);
+    expect(andheriEastLeads.every((lead) => lead.sentAt ? lead.status === 'sent' : lead.status === 'remaining')).toBe(true);
     expect(andheriEastLeads.every((lead) => lead.sourceUrl && lead.pitch)).toBe(true);
     expect(seedLeads).toHaveLength(153);
   });

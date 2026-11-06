@@ -2,7 +2,10 @@ import type { RestaurantLead } from '../types';
 import { createDefaultPitch } from '../lib/pitch';
 
 // Generated from outreach/andheri-east-restaurant-emails.csv.
-// Every row remains unsent until explicitly confirmed in Gmail Sent.
+// Send state is updated only after confirmation in Gmail Sent.
+const gmailConfirmedSentThrough = 16;
+const gmailConfirmedSentAt = '2026-11-06';
+
 const andheriEastRows = [
   ["Sangeeta's Kitchen", "sangeetaskitchen@gmail.com", "Hanuman Nagar / Chakala", "Restaurant", "https://sangeetaskitchens.com/"],
   ["The Solitaire - Hotel Kohinoor Continental", "solitaire@hotelkohinoorcontinental.com", "JB Nagar", "Hotel dining", "https://www.hotelkohinoorcontinental.com/dining.php"],
@@ -135,6 +138,7 @@ const serviceLabelByCategory: Record<string, string> = {
 
 export const andheriEastLeads: RestaurantLead[] = andheriEastRows.map(
   ([name, email, locality, cuisine, sourceUrl], index) => {
+    const isSent = index < gmailConfirmedSentThrough;
     const lead = {
       id: `andheri-east-${String(index + 1).padStart(3, '0')}`,
       name,
@@ -143,7 +147,8 @@ export const andheriEastLeads: RestaurantLead[] = andheriEastRows.map(
       locality,
       address: locality.includes('Andheri East') ? `${locality}, Mumbai` : `${locality}, Andheri East, Mumbai`,
       sourceUrl,
-      status: 'remaining' as const,
+      status: isSent ? 'sent' as const : 'remaining' as const,
+      sentAt: isSent ? gmailConfirmedSentAt : undefined,
       origin: 'researched' as const,
       queueGroup: 'New research' as const,
     };

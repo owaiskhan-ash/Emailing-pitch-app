@@ -1,6 +1,6 @@
 # Do-not-email blocklist
 
-These 40 restaurants and 45 email addresses were confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 November 2026. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
+These 56 sent lead entries cover 61 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 and 6 November 2026. This includes 40 original restaurants and 16 Andheri East contacts. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
 
 | Restaurant | Protected email addresses | Status |
 | --- | --- | --- |
@@ -45,4 +45,20 @@ These 40 restaurants and 45 email addresses were confirmed in Gmail `SENT` on `a
 | Foo Andheri | social@pshpl.com | Sent |
 | YouMee Infiniti Mall | customercare@lbf.co.in | Sent |
 
+| Sangeeta's Kitchen | sangeetaskitchen@gmail.com | Sent |
+| The Solitaire - Hotel Kohinoor Continental | solitaire@hotelkohinoorcontinental.com | Sent |
+| Indriya Mishran | info@indriyamishran.com | Sent |
+| Peninsula Redpine Restaurant & Bar | fnb@peninsularedpine.in | Sent |
+| Peninsula Redpine | reservations@peninsularedpine.in | Sent |
+| 99 East - Oriental Aster | reservations@orientalaster.com | Sent |
+| 99 East - Oriental Aster | fo@orientalaster.com | Sent |
+| The Mirador | reservation@themirador.com | Sent |
+| The Mirador | banquets@themirador.com | Sent |
+| Starbucks Marol | s367@tatastarbucks.com | Sent |
+| Waikiki Experience | mumbaiwaikiki@gmail.com | Sent |
+| Dragonfly Hotel Dining | reservations@dragonflyhotel.in | Sent |
+| Dragonfly Hotel Banquets | banquets@dragonflyhotel.in | Sent |
+| Dragonfly Surprises | surprises@hoteldragonfly.in | Sent |
+| La Pino'z Pizza Marol | support@lapinozpizza.in | Sent |
+| La Pino'z Pizza Marol | info@lapinozpizza.in | Sent |
 The machine-readable copy is in `emailed-restaurants.csv`. New restaurants marked as sent in the dashboard are added to its exported blocklist automatically.
