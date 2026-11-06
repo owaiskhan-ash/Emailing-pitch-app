@@ -1,6 +1,6 @@
 # Do-not-email blocklist
 
-These 56 sent lead entries cover 61 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 and 6 November 2026. This includes 40 original restaurants and 16 Andheri East contacts. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
+These 71 sent lead entries cover 76 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 and 6 November 2026. This includes 40 original restaurants and 31 Andheri East contacts. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
 
 | Restaurant | Protected email addresses | Status |
 | --- | --- | --- |
@@ -61,4 +61,19 @@ These 56 sent lead entries cover 61 protected email addresses, confirmed in Gmai
 | Dragonfly Surprises | surprises@hoteldragonfly.in | Sent |
 | La Pino'z Pizza Marol | support@lapinozpizza.in | Sent |
 | La Pino'z Pizza Marol | info@lapinozpizza.in | Sent |
+| KFC Marol Metro Station | kfc.marolmetrostation@sapphirefoods.in | Sent |
+| Marol Bakery Cakes & Rolls | cakesandrolls@gmail.com | Sent |
+| Shalimar Restaurant | khanakram7718@icloud.com | Sent |
+| Mitron - Peninsula Grand | mitron@peninsulagrand.com | Sent |
+| Barbeque Nation Sakinaka | feedback@barbequenation.com | Sent |
+| Barista Coffee Mahakali Caves | west.3421@barista.co.in | Sent |
+| Burger King Mahakali Caves | altaf.baig@rbrandsasia.com | Sent |
+| Blue Tokai Coffee Mahakali Caves | cm.mahakali@bluetokaicoffee.com | Sent |
+| Blue Tokai Coffee Andheri East | getcoffee@bluetokaicoffee.com | Sent |
+| Qmin - Ginger Mumbai Andheri East | feedback@gingerhotels.com | Sent |
+| Ginger Mumbai Andheri MIDC | reservations@gingerhotels.com | Sent |
+| Ginger Mumbai Andheri MIDC | book@gingerhotels.com | Sent |
+| Mirwah Restaurant | mirwah16@gmail.com | Sent |
+| Zara Foods | zarafoods1@gmail.com | Sent |
+| Starbucks Wall Street Andheri | s170@tatastarbucks.com | Sent |
 The machine-readable copy is in `emailed-restaurants.csv`. New restaurants marked as sent in the dashboard are added to its exported blocklist automatically.
