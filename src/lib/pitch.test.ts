@@ -7,11 +7,11 @@ import { findEmailConflict, getBlockedEmails } from './leads';
 const remaining = [...queuedLeads, ...researchedLeads, ...andheriEastLeads];
 
 describe('outreach data', () => {
-  it('preserves the original sent records and protects 31 Andheri East sends', () => {
+  it('preserves the original sent records and protects 40 Andheri East sends', () => {
     expect(sentLeads).toHaveLength(18);
-    expect(seedLeads.filter((lead) => lead.status === 'sent')).toHaveLength(71);
-    expect(andheriEastLeads.filter((lead) => lead.status === 'sent')).toHaveLength(31);
-    expect(getBlockedEmails(seedLeads)).toHaveLength(76);
+    expect(seedLeads.filter((lead) => lead.status === 'sent')).toHaveLength(80);
+    expect(andheriEastLeads.filter((lead) => lead.status === 'sent')).toHaveLength(40);
+    expect(getBlockedEmails(seedLeads)).toHaveLength(85);
   });
 
   it('keeps the original queue and tracks 107 Andheri East contacts', () => {
@@ -19,11 +19,11 @@ describe('outreach data', () => {
     expect(researchedLeads).toHaveLength(9);
     expect(andheriEastLeads).toHaveLength(107);
     expect(remaining).toHaveLength(135);
-    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(82);
+    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(73);
     expect(andheriEastLeads.every((lead) => lead.origin === 'researched')).toBe(true);
     expect(andheriEastLeads.every((lead) => lead.queueGroup === 'New research')).toBe(true);
-    expect(andheriEastLeads.filter((lead) => lead.status === 'remaining')).toHaveLength(76);
-    expect(andheriEastLeads.filter((lead) => lead.status === 'sent')).toHaveLength(31);
+    expect(andheriEastLeads.filter((lead) => lead.status === 'remaining')).toHaveLength(67);
+    expect(andheriEastLeads.filter((lead) => lead.status === 'sent')).toHaveLength(40);
     expect(andheriEastLeads.every((lead) => lead.sentAt ? lead.status === 'sent' : lead.status === 'remaining')).toBe(true);
     expect(andheriEastLeads.every((lead) => lead.sourceUrl && lead.pitch)).toBe(true);
     expect(seedLeads).toHaveLength(153);

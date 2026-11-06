@@ -1,6 +1,6 @@
 # Do-not-email blocklist
 
-These 71 sent lead entries cover 76 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 and 6 November 2026. This includes 40 original restaurants and 31 Andheri East contacts. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
+These 80 sent lead entries cover 85 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 and 6 November 2026. This includes 40 original restaurants and 40 Andheri East contacts. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
 
 | Restaurant | Protected email addresses | Status |
 | --- | --- | --- |
@@ -76,4 +76,13 @@ These 71 sent lead entries cover 76 protected email addresses, confirmed in Gmai
 | Mirwah Restaurant | mirwah16@gmail.com | Sent |
 | Zara Foods | zarafoods1@gmail.com | Sent |
 | Starbucks Wall Street Andheri | s170@tatastarbucks.com | Sent |
+| Starbucks WEH Metro | s568@tatastarbucks.com | Sent |
+| Hotel Shashikant Restaurant & Bar | info@hotelshashikant.com | Sent |
+| Click Hotel Andheri MIDC | resv.midc@theclickhotels.com | Sent |
+| NEBO Fete House | neboallday@gmail.com | Sent |
+| KFC Andheri East - Kanakia Wall Street | KFCFeedBack@yum.com | Sent |
+| The LaLiT Mumbai Dining | mumsales@thelalit.com | Sent |
+| The LaLiT Mumbai Dining | mumresv@thelalit.com | Sent |
+| Hilton Mumbai International Airport Dining | Reservations.Mumbai@hilton.com | Sent |
+| ARK 2.0 - Courtyard by Marriott | cy.bomcy.bar.mgr@courtyard.com | Sent |
 The machine-readable copy is in `emailed-restaurants.csv`. New restaurants marked as sent in the dashboard are added to its exported blocklist automatically.
