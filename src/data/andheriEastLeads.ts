@@ -136,6 +136,34 @@ const serviceLabelByCategory: Record<string, string> = {
   'Chinese quick service restaurant': 'Chinese quick-service restaurant',
 };
 
+const futureQueueChainPrefixes = [
+  'Barbeque Nation',
+  'Barista Coffee',
+  'Blue Tokai Coffee',
+  'Burger King',
+  'Chaayos',
+  'Chai Point',
+  "Domino's Pizza",
+  'KFC',
+  "La Pino'z Pizza",
+  'Mainland China',
+  "McDonald's",
+  'Pizza Hut',
+  'Punjab Grill',
+  'Starbucks',
+  'Subway',
+  'The Irish House',
+  'Third Wave Coffee',
+  'WOW China',
+  'Wow! Momo',
+  'YouMee',
+] as const;
+
+export const isExcludedFutureChain = (name: string) =>
+  futureQueueChainPrefixes.some((prefix) => name.startsWith(prefix));
+
+// Large chains have established POS systems. Preserve sent history and
+// duplicate protection, but keep their unsent contacts out of future outreach.
 export const andheriEastLeads: RestaurantLead[] = andheriEastRows.map(
   ([name, email, locality, cuisine, sourceUrl], index) => {
     const isSent = index < gmailConfirmedSentThrough;
@@ -163,4 +191,4 @@ export const andheriEastLeads: RestaurantLead[] = andheriEastRows.map(
       },
     };
   },
-);
+).filter((lead) => lead.status === 'sent' || !isExcludedFutureChain(lead.name));

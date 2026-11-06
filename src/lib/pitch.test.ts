@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { queuedLeads, researchedLeads, seedLeads, sentLeads } from '../data/leads';
-import { andheriEastLeads } from '../data/andheriEastLeads';
+import { andheriEastLeads, isExcludedFutureChain } from '../data/andheriEastLeads';
 import { APPROVED_HTML_SIGNATURE, generatePitch, hasForbiddenDash } from './pitch';
 import { findEmailConflict, getBlockedEmails } from './leads';
 
@@ -14,19 +14,30 @@ describe('outreach data', () => {
     expect(getBlockedEmails(seedLeads)).toHaveLength(85);
   });
 
-  it('keeps the original queue and tracks 107 Andheri East contacts', () => {
+  it('keeps the original queue and tracks 80 active Andheri East contacts', () => {
     expect(queuedLeads).toHaveLength(19);
-    expect(researchedLeads).toHaveLength(9);
-    expect(andheriEastLeads).toHaveLength(107);
-    expect(remaining).toHaveLength(135);
-    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(73);
+    expect(researchedLeads).toHaveLength(6);
+    expect(andheriEastLeads).toHaveLength(80);
+    expect(remaining).toHaveLength(105);
+    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(43);
     expect(andheriEastLeads.every((lead) => lead.origin === 'researched')).toBe(true);
     expect(andheriEastLeads.every((lead) => lead.queueGroup === 'New research')).toBe(true);
-    expect(andheriEastLeads.filter((lead) => lead.status === 'remaining')).toHaveLength(67);
+    expect(andheriEastLeads.filter((lead) => lead.status === 'remaining')).toHaveLength(40);
     expect(andheriEastLeads.filter((lead) => lead.status === 'sent')).toHaveLength(40);
     expect(andheriEastLeads.every((lead) => lead.sentAt ? lead.status === 'sent' : lead.status === 'remaining')).toBe(true);
     expect(andheriEastLeads.every((lead) => lead.sourceUrl && lead.pitch)).toBe(true);
-    expect(seedLeads).toHaveLength(153);
+    expect(seedLeads).toHaveLength(123);
+  });
+
+  it('excludes major chains from future outreach without deleting sent history', () => {
+    const futureLeads = seedLeads.filter((lead) => lead.status === 'remaining');
+    expect(futureLeads.some((lead) => isExcludedFutureChain(lead.name))).toBe(false);
+    expect(andheriEastLeads.some((lead) => lead.id === 'andheri-east-086')).toBe(false);
+    expect(researchedLeads.some((lead) => lead.id === 'punjab-grill-infiniti')).toBe(false);
+    expect(researchedLeads.some((lead) => lead.id === 'mainland-china-andheri')).toBe(false);
+    expect(researchedLeads.some((lead) => lead.id === 'irish-house-andheri')).toBe(false);
+    expect(andheriEastLeads.filter((lead) => lead.status === 'sent' && isExcludedFutureChain(lead.name))).toHaveLength(12);
+    expect(researchedLeads.find((lead) => lead.id === 'youmee-infiniti')?.status).toBe('sent');
   });
 
   it('has no duplicate email addresses or lead IDs across seed leads', () => {
