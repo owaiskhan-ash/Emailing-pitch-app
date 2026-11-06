@@ -3,7 +3,7 @@ import { createDefaultPitch } from '../lib/pitch';
 
 // Generated from outreach/andheri-east-restaurant-emails.csv.
 // Send state is updated only after confirmation in Gmail Sent.
-const gmailConfirmedSentThrough = 31;
+const gmailConfirmedSentThrough = 40;
 const gmailConfirmedSentAt = '2026-11-06';
 
 const andheriEastRows = [
