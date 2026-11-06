@@ -1,5 +1,5 @@
 import type { RestaurantLead } from '../types';
-import { andheriEastLeads } from './andheriEastLeads';
+import { andheriEastLeads, isExcludedFutureChain } from './andheriEastLeads';
 
 export const sentLeads: RestaurantLead[] = [
   {
@@ -306,7 +306,7 @@ export const queuedLeads: RestaurantLead[] = [
   },
 ];
 
-export const researchedLeads: RestaurantLead[] = [
+const researchedLeadRows: RestaurantLead[] = [
   {
     id: 'cafe-safar', name: 'Cafe Safar', emails: ['cafesafar2005@gmail.com'], phone: '022 6949 0000',
     cuisine: 'North Indian, Mughlai, Chinese & Fast Food', locality: 'Oshiwara',
@@ -416,5 +416,9 @@ export const researchedLeads: RestaurantLead[] = [
     },
   },
 ];
+
+export const researchedLeads: RestaurantLead[] = researchedLeadRows.filter(
+  (lead) => lead.status === 'sent' || !isExcludedFutureChain(lead.name),
+);
 
 export const seedLeads: RestaurantLead[] = [...sentLeads, ...queuedLeads, ...researchedLeads, ...andheriEastLeads];
