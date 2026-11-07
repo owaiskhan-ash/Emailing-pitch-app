@@ -1,6 +1,6 @@
 # Do-not-email blocklist
 
-These 80 sent lead entries cover 85 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5 and 6 November 2026. This includes 40 original restaurants and 40 Andheri East contacts. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
+These 82 sent lead entries cover 87 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5, 6, and 7 November 2026. This includes 40 original restaurants and 42 Andheri East contacts. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
 
 | Restaurant | Protected email addresses | Status |
 | --- | --- | --- |
@@ -85,4 +85,6 @@ These 80 sent lead entries cover 85 protected email addresses, confirmed in Gmai
 | The LaLiT Mumbai Dining | mumresv@thelalit.com | Sent |
 | Hilton Mumbai International Airport Dining | Reservations.Mumbai@hilton.com | Sent |
 | ARK 2.0 - Courtyard by Marriott | cy.bomcy.bar.mgr@courtyard.com | Sent |
+| Courtyard by Marriott Mumbai International Airport | cy.bomcy.reservations@courtyard.com | Sent |
+| Avartana - ITC Maratha | mytable.reservations@itchotels.com | Sent |
 The machine-readable copy is in `emailed-restaurants.csv`. New restaurants marked as sent in the dashboard are added to its exported blocklist automatically.

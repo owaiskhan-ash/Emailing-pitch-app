@@ -7,11 +7,11 @@ import { findEmailConflict, getBlockedEmails } from './leads';
 const remaining = [...queuedLeads, ...researchedLeads, ...andheriEastLeads];
 
 describe('outreach data', () => {
-  it('preserves the original sent records and protects 40 Andheri East sends', () => {
+  it('preserves the original sent records and protects 42 Andheri East sends', () => {
     expect(sentLeads).toHaveLength(18);
-    expect(seedLeads.filter((lead) => lead.status === 'sent')).toHaveLength(80);
-    expect(andheriEastLeads.filter((lead) => lead.status === 'sent')).toHaveLength(40);
-    expect(getBlockedEmails(seedLeads)).toHaveLength(85);
+    expect(seedLeads.filter((lead) => lead.status === 'sent')).toHaveLength(82);
+    expect(andheriEastLeads.filter((lead) => lead.status === 'sent')).toHaveLength(42);
+    expect(getBlockedEmails(seedLeads)).toHaveLength(87);
   });
 
   it('keeps the original queue and tracks 80 active Andheri East contacts', () => {
@@ -19,11 +19,11 @@ describe('outreach data', () => {
     expect(researchedLeads).toHaveLength(6);
     expect(andheriEastLeads).toHaveLength(80);
     expect(remaining).toHaveLength(105);
-    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(43);
+    expect(remaining.filter((lead) => lead.status === 'remaining')).toHaveLength(41);
     expect(andheriEastLeads.every((lead) => lead.origin === 'researched')).toBe(true);
     expect(andheriEastLeads.every((lead) => lead.queueGroup === 'New research')).toBe(true);
-    expect(andheriEastLeads.filter((lead) => lead.status === 'remaining')).toHaveLength(40);
-    expect(andheriEastLeads.filter((lead) => lead.status === 'sent')).toHaveLength(40);
+    expect(andheriEastLeads.filter((lead) => lead.status === 'remaining')).toHaveLength(38);
+    expect(andheriEastLeads.filter((lead) => lead.status === 'sent')).toHaveLength(42);
     expect(andheriEastLeads.every((lead) => lead.sentAt ? lead.status === 'sent' : lead.status === 'remaining')).toBe(true);
     expect(andheriEastLeads.every((lead) => lead.sourceUrl && lead.pitch)).toBe(true);
     expect(seedLeads).toHaveLength(123);
@@ -33,6 +33,9 @@ describe('outreach data', () => {
     const futureLeads = seedLeads.filter((lead) => lead.status === 'remaining');
     expect(futureLeads.some((lead) => isExcludedFutureChain(lead.name))).toBe(false);
     expect(andheriEastLeads.some((lead) => lead.id === 'andheri-east-086')).toBe(false);
+    expect(andheriEastLeads.find((lead) => lead.id === 'andheri-east-041')?.status).toBe('sent');
+    expect(andheriEastLeads.find((lead) => lead.id === 'andheri-east-042')?.status).toBe('sent');
+    expect(andheriEastLeads.find((lead) => lead.id === 'andheri-east-043')?.status).toBe('remaining');
     expect(researchedLeads.some((lead) => lead.id === 'punjab-grill-infiniti')).toBe(false);
     expect(researchedLeads.some((lead) => lead.id === 'mainland-china-andheri')).toBe(false);
     expect(researchedLeads.some((lead) => lead.id === 'irish-house-andheri')).toBe(false);
