@@ -1,6 +1,6 @@
 # Do-not-email blocklist
 
-These 112 sent lead entries cover 117 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5, 6, and 7 November 2026. This includes 40 original restaurants, 69 Andheri East contacts, and 3 earlier researched restaurants. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
+These 120 sent lead entries cover 125 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5, 6, and 7 November 2026. This includes 40 original restaurants, 77 Andheri East contacts, and 3 earlier researched restaurants. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
 
 | Restaurant | Protected email addresses | Status |
 | --- | --- | --- |
@@ -117,4 +117,12 @@ These 112 sent lead entries cover 117 protected email addresses, confirmed in Gm
 | Tattva Bar & Cafe | peninsularedpine230@gmail.com | Sent |
 | Tattva Bar & Cafe | info@tattvabarandcafe.in | Sent |
 | Silver Nest World Cuisine & Bar | social.silvernest@gmail.com | Sent |
+| Novotel Mumbai International Airport - Food Exchange | HB4C0-RE@ACCOR.COM | Sent |
+| Fiona - Radisson Blu Mumbai International Airport | fiona@rdbmumbai.com | Sent |
+| Radisson Blu Mumbai International Airport Dining | sales@rdbmumbai.com | Sent |
+| Radisson Hotel Mumbai Andheri MIDC Dining | info.rmam@radisson.com | Sent |
+| Fairfield by Marriott Mumbai International Airport - Mado Mado | reservations@fairfieldmumbai.com | Sent |
+| Aroma Street - Hotel Le Grande | info@hotellegrande.com | Sent |
+| Cinnamon - Hotel Suba International | reservations@hotelsubainternational.com | Sent |
+| Hotel Suba Galaxy Dining | reserve@hotelsubagalaxy.com | Sent |
 The machine-readable copy is in `emailed-restaurants.csv`. New restaurants marked as sent in the dashboard are added to its exported blocklist automatically.
