@@ -3,11 +3,14 @@ import { createDefaultPitch } from '../lib/pitch';
 
 // Generated from outreach/andheri-east-restaurant-emails.csv.
 // Send state is updated only after confirmation in Gmail Sent.
-// Rows 41-42 were confirmed in Gmail Sent on 2026-11-07. Rows 43-47 and 52-61
-// (zero-based indexes below) were confirmed in Gmail Sent on 2026-11-07 as well.
+// All confirmed sends were verified in Gmail Sent on 2026-11-07. The index list
+// below covers rows 43-47 and 52-73, which follow the excluded chain block.
 const gmailConfirmedSentThrough = 42;
 const gmailConfirmedSentAt = '2026-11-06';
-const gmailConfirmedSentAfterGap = [42, 43, 44, 45, 46, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60];
+const gmailConfirmedSentAfterGap = [
+  42, 43, 44, 45, 46, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+  61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72,
+];
 const gmailConfirmedSentDateByIndex: Record<number, string> = Object.fromEntries(
   [40, 41, ...gmailConfirmedSentAfterGap].map((index) => [index, '2026-11-07']),
 );

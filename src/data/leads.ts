@@ -383,7 +383,7 @@ const researchedLeadRows: RestaurantLead[] = [
     id: 'chholay-oshiwara', name: 'Chholay Oshiwara', emails: ['chholay@chholay.co.in'], phone: '77150 33300 / 77150 66600',
     cuisine: 'North Indian, Chole Bhature & Fast Dining', locality: 'Oshiwara',
     address: 'Shop 5, Building 11, Starship CHSL, Oshiwara Link Road, Andheri West',
-    sourceUrl: 'https://chholay.co.in/contact', status: 'remaining', origin: 'researched', queueGroup: 'New research',
+    sourceUrl: 'https://chholay.co.in/contact', status: 'sent', sentAt: '2026-11-07', origin: 'researched', queueGroup: 'New research',
     pitch: {
       opening: 'With chole bhature and North Indian favourites served from morning through late evening on Oshiwara Link Road, quick counter billing and accurate KOTs are essential.',
       posType: 'Casual Dining Restaurant', workflow: 'counter, takeaway, and table workflow', reliability: 'breakfast, lunch, and late-evening orders keep moving without counter delays',
@@ -395,7 +395,7 @@ const researchedLeadRows: RestaurantLead[] = [
     id: 'angrezi-patiyalaa', name: 'Angrezi Patiyalaa', emails: ['angrezipatiyalaa01@gmail.com'], phone: '081040 99975',
     cuisine: 'North Indian & Casual Dining', locality: 'Infiniti Mall, Andheri West',
     address: 'Infiniti Mall, New Link Road, Oshiwara, Andheri West 400053',
-    sourceUrl: 'https://www.infinitimall.com/feast/dining/angrezi-patiyalaa-andheri/', status: 'remaining', origin: 'researched', queueGroup: 'New research',
+    sourceUrl: 'https://www.infinitimall.com/feast/dining/angrezi-patiyalaa-andheri/', status: 'sent', sentAt: '2026-11-07', origin: 'researched', queueGroup: 'New research',
     pitch: {
       opening: 'Serving North Indian favourites inside Infiniti Mall means your team handles quick dining decisions, family tables, and takeaway orders throughout busy mall hours.',
       posType: 'Casual Dining Restaurant', workflow: 'mall dining, table, and takeaway workflow', reliability: 'food KOTs and customer billing keep moving through weekend mall rush',
@@ -407,7 +407,7 @@ const researchedLeadRows: RestaurantLead[] = [
     id: 'yasins-food-inn', name: "Yasin's Food Inn", emails: ['yasinsfoodinn@gmail.com'], phone: '022 6877 2222',
     cuisine: 'North Indian, Indo-Chinese & Tandoori', locality: 'Lokhandwala, Andheri West',
     address: '27/C Shiv Sadan, Apna Ghar, 1st Cross Lane, Lokhandwala, Andheri West 400053',
-    sourceUrl: 'https://www.facebook.com/foodinnlokhandwala/', status: 'remaining', origin: 'researched', queueGroup: 'New research',
+    sourceUrl: 'https://www.facebook.com/foodinnlokhandwala/', status: 'sent', sentAt: '2026-11-07', origin: 'researched', queueGroup: 'New research',
     pitch: {
       opening: 'With North Indian, Indo-Chinese, tandoori dishes, and biryani served in Lokhandwala, your team manages a broad menu across dine-in, parcels, and delivery orders.',
       posType: 'Family Restaurant', workflow: 'multi-cuisine dining and takeaway workflow', reliability: 'tandoor, wok, and biryani orders keep moving through dinner and late-evening rush',

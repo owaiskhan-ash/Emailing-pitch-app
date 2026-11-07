@@ -1,6 +1,6 @@
 # Do-not-email blocklist
 
-These 97 sent lead entries cover 102 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5, 6, and 7 November 2026. This includes 40 original restaurants and 57 Andheri East contacts. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
+These 112 sent lead entries cover 117 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5, 6, and 7 November 2026. This includes 40 original restaurants, 69 Andheri East contacts, and 3 earlier researched restaurants. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
 
 | Restaurant | Protected email addresses | Status |
 | --- | --- | --- |
@@ -102,4 +102,19 @@ These 97 sent lead entries cover 102 protected email addresses, confirmed in Gma
 | Fresh & Honest Cafe | bizenq@fresh-honest.com | Sent |
 | Cray Craft | info@craycraft.in | Sent |
 | Cray Craft | craycraftmumbai@gmail.com | Sent |
+| Chholay Oshiwara | chholay@chholay.co.in | Sent |
+| Angrezi Patiyalaa | angrezipatiyalaa01@gmail.com | Sent |
+| Yasin's Food Inn | yasinsfoodinn@gmail.com | Sent |
+| Above & Beyond Eatery.Hangout | anbaircafe@gmail.com | Sent |
+| Corkage & Co | reachus@corkage.in | Sent |
+| Caff & Co | caffnco@gmail.com | Sent |
+| IAA by Tunga | iaabombay@gmail.com | Sent |
+| The International by Tunga Dining | international@tungahotels.com | Sent |
+| The International by Tunga Banquets | banquets_intl@tungahotels.com | Sent |
+| The International by Tunga Banquets | sameerv@tungahotels.com | Sent |
+| Vihara - The International by Tunga | takeaway_intl@tungahotels.com | Sent |
+| Something's Fishy - Tunga | info@tungahotels.com | Sent |
+| Tattva Bar & Cafe | peninsularedpine230@gmail.com | Sent |
+| Tattva Bar & Cafe | info@tattvabarandcafe.in | Sent |
+| Silver Nest World Cuisine & Bar | social.silvernest@gmail.com | Sent |
 The machine-readable copy is in `emailed-restaurants.csv`. New restaurants marked as sent in the dashboard are added to its exported blocklist automatically.
