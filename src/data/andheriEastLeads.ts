@@ -3,11 +3,17 @@ import { createDefaultPitch } from '../lib/pitch';
 
 // Generated from outreach/andheri-east-restaurant-emails.csv.
 // Send state is updated only after confirmation in Gmail Sent.
-// Rows 41-42 (Courtyard by Marriott reservations, Avartana - ITC Maratha) were
-// confirmed in Gmail Sent on 2026-11-07.
+// Rows 41-42 were confirmed in Gmail Sent on 2026-11-07. Rows 43-47 and 52-61
+// (zero-based indexes below) were confirmed in Gmail Sent on 2026-11-07 as well.
 const gmailConfirmedSentThrough = 42;
 const gmailConfirmedSentAt = '2026-11-06';
-const gmailConfirmedSentDateByIndex: Record<number, string> = { 40: '2026-11-07', 41: '2026-11-07' };
+const gmailConfirmedSentAfterGap = [42, 43, 44, 45, 46, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60];
+const gmailConfirmedSentDateByIndex: Record<number, string> = Object.fromEntries(
+  [40, 41, ...gmailConfirmedSentAfterGap].map((index) => [index, '2026-11-07']),
+);
+
+const isGmailConfirmedSent = (index: number) =>
+  index < gmailConfirmedSentThrough || gmailConfirmedSentAfterGap.includes(index);
 
 const andheriEastRows = [
   ["Sangeeta's Kitchen", "sangeetaskitchen@gmail.com", "Hanuman Nagar / Chakala", "Restaurant", "https://sangeetaskitchens.com/"],
@@ -169,7 +175,7 @@ export const isExcludedFutureChain = (name: string) =>
 // duplicate protection, but keep their unsent contacts out of future outreach.
 export const andheriEastLeads: RestaurantLead[] = andheriEastRows.map(
   ([name, email, locality, cuisine, sourceUrl], index) => {
-    const isSent = index < gmailConfirmedSentThrough;
+    const isSent = isGmailConfirmedSent(index);
     const lead = {
       id: `andheri-east-${String(index + 1).padStart(3, '0')}`,
       name,

@@ -1,6 +1,6 @@
 # Do-not-email blocklist
 
-These 82 sent lead entries cover 87 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5, 6, and 7 November 2026. This includes 40 original restaurants and 42 Andheri East contacts. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
+These 97 sent lead entries cover 102 protected email addresses, confirmed in Gmail `SENT` on `ashketchupkeke@gmail.com` on 5, 6, and 7 November 2026. This includes 40 original restaurants and 57 Andheri East contacts. Never send another Imagine pitch to these addresses. Matching in the dashboard is case-insensitive.
 
 | Restaurant | Protected email addresses | Status |
 | --- | --- | --- |
@@ -87,4 +87,19 @@ These 82 sent lead entries cover 87 protected email addresses, confirmed in Gmai
 | ARK 2.0 - Courtyard by Marriott | cy.bomcy.bar.mgr@courtyard.com | Sent |
 | Courtyard by Marriott Mumbai International Airport | cy.bomcy.reservations@courtyard.com | Sent |
 | Avartana - ITC Maratha | mytable.reservations@itchotels.com | Sent |
+| ITC Maratha Restaurants | Restaurantreservation.Itcmaratha@itchotels.com | Sent |
+| The Finch Mumbai | concierge.mumbai@thefinch.in | Sent |
+| The Finch Mumbai | concierge@thefinch.in | Sent |
+| Goldfinch Mumbai | info@goldfinchhotels.com | Sent |
+| Goldfinch Mumbai | reserve.gfmum@goldfinchhotels.com | Sent |
+| Prasadam Pure Veg Restaurant | info@prasadamrestaurant.com | Sent |
+| Sai Palace Hotel Andheri East | reservations@saipalacehotels.com | Sent |
+| Sai Palace Hotel Andheri East | banquets@saipalacehotels.com | Sent |
+| Sai Palace Hotel Andheri East | sales@saipalacehotels.com | Sent |
+| The Paradise by Tunga | paradise@tungahotels.com | Sent |
+| Southern Vibe Andheri East | info@southernvibe.com | Sent |
+| IRA by Orchid Mumbai - Spice Oasis & City Cafe | reservations@orchidhotel.com | Sent |
+| Fresh & Honest Cafe | bizenq@fresh-honest.com | Sent |
+| Cray Craft | info@craycraft.in | Sent |
+| Cray Craft | craycraftmumbai@gmail.com | Sent |
 The machine-readable copy is in `emailed-restaurants.csv`. New restaurants marked as sent in the dashboard are added to its exported blocklist automatically.
