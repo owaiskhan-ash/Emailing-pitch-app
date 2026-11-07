@@ -3,8 +3,10 @@ import { createDefaultPitch } from '../lib/pitch';
 
 // Generated from outreach/andheri-east-restaurant-emails.csv.
 // Send state is updated only after confirmation in Gmail Sent.
-const gmailConfirmedSentThrough = 40;
+// Row 41 (Courtyard by Marriott reservations) was confirmed in Gmail Sent on 2026-11-07.
+const gmailConfirmedSentThrough = 41;
 const gmailConfirmedSentAt = '2026-11-06';
+const gmailConfirmedSentDateByIndex: Record<number, string> = { 40: '2026-11-07' };
 
 const andheriEastRows = [
   ["Sangeeta's Kitchen", "sangeetaskitchen@gmail.com", "Hanuman Nagar / Chakala", "Restaurant", "https://sangeetaskitchens.com/"],
@@ -176,7 +178,7 @@ export const andheriEastLeads: RestaurantLead[] = andheriEastRows.map(
       address: locality.includes('Andheri East') ? `${locality}, Mumbai` : `${locality}, Andheri East, Mumbai`,
       sourceUrl,
       status: isSent ? 'sent' as const : 'remaining' as const,
-      sentAt: isSent ? gmailConfirmedSentAt : undefined,
+      sentAt: isSent ? gmailConfirmedSentDateByIndex[index] ?? gmailConfirmedSentAt : undefined,
       origin: 'researched' as const,
       queueGroup: 'New research' as const,
     };
